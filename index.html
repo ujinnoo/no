@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="nocan't hero">
+    <meta name="robots" content="noisecanceling, hero">
+    <meta name="description" content="노이즈캔슬링으로 인한 사건·사고에 잠식되어 버린 도시를 구한다.">
+    <meta property="og:site_name" content="노캔히어로">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko-KR">
+    <meta property="og:image" content="./img/INSTA.png">
+    <meta property="og:title" content="노캔히어로">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <meta property="og:description" content="노이즈캔슬링으로 인한 사건·사고에 잠식되어 버린 도시를 구한다.">
+    <!-- <meta property="og:url" content=""> -->
+    <title>노캔히어로</title>
+
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <!-- 맵 스크롤 -->
+    <link rel="stylesheet" href="./css/map.css">
+
+
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+</head>
+<body>
+    <div id="loading">
+        <img src="./img/logo.png" alt="">
+    </div>
+
+    <!-- HEADER 및 내비게이션 -->
+    <header class="hidden">
+        <a href="index.html"><img src="./img/headerLogo.png" alt=""></a>
+        <nav>
+            <ul>
+                <li><a href="#issue">OVERVIEW</a></li>
+                <li><a href="#planning">PLANNING</a></li>
+                <li><a href="#design">DESIGN</a></li>
+                <li><a href="#process">PROCESS</a></li>
+                <li><a href="#teaser">VIDEO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 시작 -->
+    <main>
+
+    <!-- 시작 페이지 -->
+    <section>
+        <div class="visual-wrap">
+            <img id="main-image" src="./img/mainImage2.png" alt="">
+        </div>
+
+
+        <!-- infinite scroll 무한 스크롤 애니메이션 -->
+        <div id="logos"> 
+            <div class="logo-slide">
+                <img src="./img/logoSlide.png" alt="">
+                <img src="./img/logoSlide.png" alt="">
+                <img src="./img/logoSlide.png" alt="">
+                <img src="./img/logoSlide.png" alt="">
+            </div>
+            <div class="logo-slide">
+                <img src="./img/logoSlide.png" alt="">
+                <img src="./img/logoSlide.png" alt="">
+                <img src="./img/logoSlide.png" alt="">
+                <img src="./img/logoSlide.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- 문제 및 배경 -->
+    <section id="intro">
+        <h1 id="intro-title" class="scroll-animation">노이즈캔슬링 사고 예방<br>VR 체험</h1>
+        <div id="intro-text" class="scroll-animation">
+            <h3 id="intro-sub">생활 속 ‘노이즈캔슬링’의 위험성 증대</h3>
+            <p id="intro-explain">
+                ‘노이즈캔슬링’ 기기를 착용하는 사용자가 증가함에 따라 점차 안전 판단이 흐려지고 사고<br>
+                위험이 증가하기 시작합니다. 기기를 착용한 상태에서는 사고 위험에 그대로 노출되거나<br>
+                위험 경고 안내 사항을 전달 받지 못하는 등 부주의 사고가 빈번하게 일어나며 문제의식을<br>
+                가지지 못하게 되는 현상이 발생합니다. 따라서 저희는 이러한 문제를 개선하기 위해 노이즈<br>
+                캔슬링 관련 사건 · 사고들을 경험하여 사용자가 위험성을 자각할 수 있도록 새로운 VR<br>
+                콘텐츠를 기획하였습니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- 사례1, 2, 3 -->
+    <section id="issue">
+        <div id="issue1" class="issue-box">
+            <h6>Issue 1</h6>
+            <h3>지하철</h3>
+            <p>A씨는 지하철에서 발 빠짐 사고를 당해 허벅지에<br>
+                부상을 입었다. 승강장에서는 ‘발 빠짐 주의하세요’ 라는<br>
+                방송이 반복 재생됐지만, 무선 에어팟을<br>
+                착용한 탓에 이를 듣지 못했다.</p>
+        </div>
+        <div id="issue2" class="issue-box">
+            <h6>Issue 2</h6>
+            <h3>공원</h3>
+            <p>싱가포르에서는 공원에서 운동을 하던 한 여성이<br>
+                쓰러지는 나무에 깔려 목숨을 잃는 사고가 발생했다.<br>
+                귀에 꽂혀져 있는 노이즈캔슬링 기능으로 인해 주변<br>
+                소리를 듣지 못해 미처 나무를 피하지 못했기 때문이다.</p>
+        </div>
+        <div id="issue3" class="issue-box">
+            <h6>Issue 3</h6>
+            <h3>기차역</h3>
+            <p>보안관 사무실에 따르면, 17세의 한 소년이 펜튼의<br>
+                노퍽 남부 철도 선로를 소음 제거 헤드폰을 착용하고<br>
+                걷고 있다가 기차가 다가오는 소리를 듣지 못하고<br>
+                기차에 치이는 사고를 당하게 되었다.</p>
+        </div>
+    </section>
+
+    <!-- PLANNING 기획 -->
+    <section id="planning">
+        <h1 class="title scroll-animation">PLANNING</h1>
+        <p class="explanation scroll-animation">노이즈캔슬링 기기를 이용중인 사용자들은 과연 노이즈캔슬링 기기에 대해 어떤 인식을<br>
+            가지고 있는지에 대해 파악하기 위해 사용자 위험성 인식 조사를 실시하였습니다.</p>
+    </section>
+
+    <!-- User Research -->
+    <!-- 수정해야함!!! 오래걸려서 일단 보류, 사진으로 대체 -->
+    <section id="user-research">
+        <img src="./img/userResearch.png" alt="">
+    </section>
+
+    <!-- User Insight -->
+    <section id="user-insight">
+        <h1 class="title scroll-animation">USER INSIGHT</h1>
+        <p class="explanation scroll-animation">유저 리서치를 바탕으로 인사이트를 도출하였을 때 많은 노이즈캔슬링 사용자가<br>
+            노이즈캔슬링 관련 사건·사고에 혼란을 겪고 있지만 이에 대한 사회적 해결책이<br>
+            제시되고 있지 않은 상황이 발생합니다.</p>
+        
+        <!-- slide 기능 추가 -->
+        <div id="user-slide" class="auto-slide">
+            <img src="./img/user1.png" alt="">
+            <img src="./img/user2.png" alt="">
+            <img src="./img/user3.png" alt="">
+        </div>
+
+        <div id="insight">
+            <img class="scroll-animation" src="./img/insight1.png" alt="">
+            <img class="scroll-animation" style="margin-left: calc(100vw * 390 / 1920);" src="./img/insight2.png" alt="">
+            <img class="scroll-animation" src="./img/insight3.png" alt="">
+        </div>
+    </section>
+
+    <!-- project map 프로젝트 맵 -->
+    <section id="project-map">
+        <h1 class="title scroll-animation">PROJECT MAP</h1>
+        <p class="explanation scroll-animation">노이즈캔슬링 기기 사용자 50.9%가 노이즈캔슬링 사건사고에 대한 위험성을<br>
+            인지하고 있지만 사건·사고에 대한 사회적 문제 해결이 이뤄지지 않고 있습니다.</p>
+
+            <div id="map-title">
+                <div class="circle-title scroll-animation">PROBLEM</div>
+                <div class="circle-title scroll-animation">CONTENTS</div>
+                <div class="circle-title scroll-animation">PROJECT GOAL</div>
+            </div>
+
+        <div id="map-circle" class="scroll-animation">
+            <!-- 화살표 무쟈게 반응형하고싶음 ㅠ -->
+            <div id="map-line"><span id="arrow"></span></div>
+            <div class="circle">
+                사건사고에 대한 위험성은 인지하고<br>
+                있지만, 사회적 문제 해결이 이뤄지지 않음</div>
+            <div class="circle">
+                VR 콘텐츠로 노이즈캔슬링 관련<br>
+                사건사고를 노출시켜 경각심 유발</div>
+            <div class="circle">
+                노이즈캔슬링에 대한 경각심을 고취시켜<br>
+                사회적 문제 해결을 도모하는 VR캠페인 제작</div>
+        </div>
+    </section>
+
+    <!-- hero 노캔히어로 -->
+    <section id="hero">
+        <h1><img class="scroll-animation" src="./img/heroTitle.png" alt=""></h1>
+        <div id="hero-text">            
+            <h3 id="hero-sub" class="scroll-animation">위험에서 도와주고 본보기가 되다.</h3>
+            <p id="hero-explain" class="scroll-animation">사용자가 VR 속에서 위기에 빠진 시민을 구하는 ‘히어로’가 되어 내용을 전개하여. ‘히어로’가 주는<br>
+                긍정적 에너지와 능력은 문제점과 해결방안을 사용자에게 효과적으로 전달할 수 있는 매개체가 됩니다.</p>
+        </div>
+    </section>
+
+    <!-- 이름 -->
+    <section id="naming">
+        <h1 class="title scroll-animation">NAMING</h1>
+        <p class="explanation scroll-animation">’노이즈캔슬링’의 부정적인 면을 비판하여 ‘들을 수 없는’ 이라는 뜻의  ‘No can’t hear’ 를 채택하였고. 주제 핵심<br>
+            키워드 ‘영웅’을 뜻하는 ‘Hero’를 ‘Hear’와 교체하여 ‘노캔히어로'라는 서비스명을 구축하였습니다.</p>
+        <div id="naming-box">
+            <img class="scroll-animation" src="./img/nocantheroname.png" alt="">
+        </div>
+    </section>
+
+    <!-- 로고 -->
+    <section id="logo">
+        <img class="" src="./img/logo.png" alt="">
+    </section>
+
+    <!-- 디자인 -->
+    <section id="design">
+        <h1 class="title scroll-animation">DESIGN</h1>
+        <p class="explanation scroll-animation">노캔히어로 VR의 컨셉 및 방향성을 명확히 파악하여 이에 맞춘 모델링, 오브젝트, 맵, UI<br>
+            요소까지 디자인 계획을 짠 후 제작에 들어갔습니다.</p>
+        <img class="" src="./img/stickers.png" alt="">
+    </section>
+
+    <!-- 폰트 및 컬러 -->
+    <section id="gui">
+        <h1 class="title scroll-animation">GUI SYSTEM</h1>
+        <div id="font-style" class="scroll-animation">
+            <div id="montserrat">
+                <h4 class="">MONTSERRAT</h4>
+                <p style="font-weight: 200;">NO CAN'T HERO1234</p>
+                <p style="font-weight: 500;">NO CAN'T HERO1234</p>
+                <p style="font-weight: 700;">NO CAN'T HERO1234</p>
+            </div>
+            <div id="suit">
+                <h4 class="">SUIT</h4>
+                <p style="font-weight: 300;">도시를 구하는 히어로1234</p>
+                <p style="font-weight: 500;">도시를 구하는 히어로1234</p>
+                <p style="font-weight: 800;">도시를 구하는 히어로1234</p>
+            </div>
+        </div>
+
+        <div id="palette" class="scroll-animation">
+            <h4 class="">COLOR</h4>
+            <div id="main-colors">
+                <div id="main-color">
+                    <h6>MAIN COLOR</h6>
+                    <p>#FF37F7</p>
+                </div>
+                <div id="point-color">
+                    <h6>POINT COLOR</h6>
+                    <p>#5A20FF</p>
+                </div>
+            </div>
+            <div id="sub-color">
+                <div id="sub-color1">
+                    <h6>SUB COLOR</h6>
+                    <p>#FF2E2E</p>
+                </div>
+                <div id="sub-color2">
+                    <h6>SUB COLOR</h6>
+                    <p>#10CB44</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D 모델링 -->
+    <section id="modeling">
+        <h1 class="title scroll-animation">MODELING</h1>
+        <p class="explanation scroll-animation">노캔히어로 VR에 쓰일 3D 오브젝트를 C4D와 Blender 프로그램을 활용하여 제작하였습니다.</p>
+        <div id="model-slide">
+            <img src="./img/model1.png" alt="">
+            <img src="./img/model2.png" alt="">
+            <img src="./img/model3.png" alt="">
+            <img src="./img/model4.png" alt="">
+            <img src="./img/model5.png" alt="">
+            <img src="./img/model6.png" alt="">
+            <img src="./img/model7.png" alt="">
+            <img src="./img/model8.png" alt="">
+            <img src="./img/model9.png" alt="">
+            <img src="./img/model10.png" alt="">
+            <img src="./img/model11.png" alt="">
+            <img src="./img/model12.png" alt="">
+            <img src="./img/model13.png" alt="">
+            <img src="./img/model14.png" alt="">
+        </div>
+    </section>
+
+    <!-- 3D 캐릭터 모델링 -->
+    <section id="character">
+        <div class="wrapper">
+            <h1 class="title scroll-animation">CHARACTER</h1>
+            <p class="explanation scroll-animation">각각의 특징을 살린 캐릭터 디자인 스케치 후 이에 맞춰 캐릭터 제작과<br>
+                리깅 작업을 완료하였습니다.
+            </p>
+        </div>
+        <img src="./img/characters.png" alt="">
+    </section>
+
+    <!-- 바이러스 -->
+    <section id="danger">
+        <img src="./img/danger2.gif" alt="">
+    </section>
+    
+    <section id="virus">
+        <h1 class="title scroll-animation">VIRUS</h1>
+        <p class="explanation scroll-animation">음표 모양에서 모티브를 얻어 제작한 바이러스로 노이즈캔슬링 기기 사용자의 정신을 빼앗고<br>
+            개인의 부주의를 극대화시키는 역할을 수행합니다.</p>
+        </section>
+        
+        <div class="center">
+            <div><img src="./img/mon1.png" alt=""></div>
+            <div><img src="./img/mon2.png" alt=""></div>
+            <div><img src="./img/mon3.png" alt=""></div>
+            <div><img src="./img/mon4.png" alt=""></div>
+            <div><img src="./img/mon5.png" alt=""></div>
+            <div><img src="./img/mon6.png" alt=""></div>
+        </div>
+        <div id="viruses">
+            <img src="./img/target.png" alt="">
+        </div>
+        
+    <!-- 맵 -->
+    <section id="map-concept">
+        <h1 class="title scroll-animation">MAP CONCEPT</h1>
+        <p class="explanation scroll-animation">미래 도시를 연출하기 위해 네온 색상을 사용했고, 맵마다 다른 색상들을 사용해<br>
+            각 맵의 특성을 살려주었습니다.</p>
+    </section>
+
+    <!-- 맵 사진 -->
+    <div id="map-slide" class="container">
+        <section class="area1"></section>
+        <section class="area2"></section>
+        <section class="area3"></section>
+        <section class="area4"></section>
+    </div>
+
+    <!-- 자동 스크롤 맵 사진 -->
+    <!-- <div id="map-slide">
+        <div class="map-slideImg">
+            <img src="./img/map1.png" alt="">
+            
+        </div>
+        <div class="map-slideImg">
+            <img src="./img/map2.png" alt="">
+            
+        </div>
+        <div class="map-slideImg">
+            <img src="./img/map3.png" alt="">
+
+        </div>
+        <div class="map-slideImg">
+            <img src="./img/map4.png" alt="">
+        </div>
+    </div> -->
+    
+    <!-- 챕터 설명 -->
+    <section id="chapter">
+        <div class="chapter-slide">
+            <div>
+                <img src="./img/chap01.png" alt="">
+                <div class="chapter-text">
+                    <h3>CHAPTER 01.</h3>
+                    <p>노이즈캔슬링 기능이 업그레이드된 노이즈플러그가 새롭게 등장하며<br>
+                    도시는 노이즈플러그 열풍이 불기 시작합니다.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./img/chap02.png" alt="">
+                <div class="chapter-text">
+                    <h3>CHAPTER 02.</h3>
+                    <p>주인공 ‘히어’는 노이즈플러그 사용자로 인해 사고를 당하게 되는데<br>
+                    그 이후로  노이즈플러그의 바이러스를 볼 수 있는 특별한 힘이 생깁니다.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./img/chap03.png" alt="">
+                <div class="chapter-text">
+                    <h3>CHAPTER 03.</h3>
+                    <p>이러한 바이러스가 시민들의 무의식에 침투하여 노이즈캔슬링 기능의<br>
+                        안전불감증을 유발해 사건·사고를 발생시킨다는 것을 파악하게 된 주인공<br>
+                        ‘히어’는 도시를 누비며 바이러스를 퇴치하는 [노캔히어로]가 됩니다.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./img/chap04.png" alt="">
+                <div class="chapter-text">
+                    <h3>CHAPTER 04.</h3>
+                    <p>주인공 ‘히어’가 바이러스를  제거하면서 노이즈플러그 안전사고 횟수가<br>
+                    점차 줄어들기 시작합니다.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./img/chap05.png" alt="">
+                <div class="chapter-text">
+                    <h3>CHAPTER 05.</h3>
+                    <p>하지만 이를 못마땅해 한 최종 바이러스가 히어를 제거하기 위해 한 소녀를<br>
+                    납치하여 인질극을 벌이기 시작합니다.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./img/chap06.png" alt="">
+                <div class="chapter-text">
+                    <h3>CHAPTER 06.</h3>
+                    <p>히어는 자신의 대표 무기 확성기로 최종 바이러스에게 계속해서 공격을<br> 
+                    가했고, 최종 바이러스는 결국 히어에게 소멸당합니다.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./img/chap07.png" alt="">
+                <div class="chapter-text">
+                    <h3>CHAPTER 07.</h3>
+                    <p>이 사건이 조명되며 많은 사용자들이 노이즈플러그 관련 사고 위험성에<br>
+                    경각심을 가지기 시작하였고, 다시 도시에는 활기가 되찾았습니다.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./img/chap08.png" alt="">
+                <div class="chapter-text">
+                    <h3>CHAPTER 08.</h3>
+                    <p>하지만 노이즈플러그 사용자에게 다시금 바이러스가 발생하는<br>
+                    장면으로 사용자 자신이 경각심을 가지지 않는다면 바이러스는<br>
+                    언제든지 다시 발생할 수 있다는 열린 결말로 마무리됩니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 프로세스 설명 -->
+    <section id="process">
+        <h1 class="title scroll-animation">PROCESS</h1>
+        <p class="explanation scroll-animation">VR을 통해 사용자가 몰입감 있게 노이즈캔슬링 사건 · 사고를 직접 체험하고<br>
+            경험하여 위험성을 인지할 수 있도록 프로세스를 설계 및 제작하였습니다.</p>
+        </section>
+        <div id="process-img">
+            <h4>OCULUS QUEST 2</h4>
+            <img src="./img/oculus.png" alt="">
+        </div>
+
+    <section id="VR">
+        <h1 class="title scroll-animation">VR INTERACTION</h1>
+        <p class="explanation scroll-animation">VR 내 상호작용 기능을 구현하여 맵의 게임적·체험적 요소를 구성하였습니다.</p>
+    </section>
+
+    
+    <div id="vr-interection">
+        <img src="./img/VRImg1.gif" alt="">
+
+        <ul id="vr-li" class="vr-list">
+            <li class="active">UI 팝업창</li>
+            <li>오브젝트 잡기 / 놓기</li>
+            <li>총알 발사 / 충돌 시 파괴</li>
+            <li>애니메이션 흐름 제어</li>
+        </ul>
+    </div>
+    <div id="vr-frame">
+        <img src="./img/vrFrame.png" alt="">
+    </div>
+
+    <!-- 티저 영상 -->
+    <section id="teaser">
+        <div class="video">
+            <video width="100%" poster="./img/video.png" controls>
+                <source src="./video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- 마무리 -->
+    <section id="closing">
+        <img class="scroll-animation" src="./img/closing.png" alt="">
+    </section>
+
+    <!-- 팀 소개 -->
+    <section id="member">
+        <h1 class="title scroll-animation">TEAM. <span class="suit">노캔히어로</span></h1>
+        
+        <div class="mem">
+            <div>
+                <img src="./img/mem-jy.png" alt="">
+                <h4>기획&emsp13;<span>박지영</span></h4>
+                <p>domian700@kaywon.ac.kr</p>
+            </div>
+            <div>
+                <img src="./img/mem-ny.png" alt="">
+                <!-- (수정) <h6>팀장</h6> -->
+                <h4>기획&emsp13;<span>장나영</span></h4>
+                <p>jny0817@naver.com</p>
+            </div>
+            <div>
+                <img src="./img/mem-sw.png" alt="">
+                <h4>프로그래밍&emsp13;<span>이성우</span></h4>
+                <p>tjddn1007@naver.com</p>
+            </div>
+            <div>
+                <img src="./img/mem-uj.png" alt="">
+                <h4>프로그래밍&emsp13;<span>이유진</span></h4>
+                <p>dbwlssn@gmail.com</p>
+            </div>
+        </div>
+        <div class="mem2">
+            <div>
+                <img src="./img/mem-sj.png" alt="">
+                <h4>디자인&emsp13;<span>김소정</span></h4>
+                <p>so3ojung@naver.comm</p>
+            </div>
+            <div>
+                <img src="./img/mem-mj.png" alt="">
+                <h4>디자인&emsp13;<span>노민정</span></h4>
+                <p>injungnomin@gmail.com</p>
+            </div>
+            <div>
+                <img src="./img/mem-jw.png" alt="">
+                <h4>디자인&emsp13;<span>이주원</span></h4>
+                <p>jwyi0303@naver.com</p>
+            </div>
+            <div>
+                <img src="./img/mem-logo.png" alt="">
+                <h4>&emsp13;</h4>
+                <p>&emsp13;</p>
+            </div>
+        </div>  
+    </section>
+
+    </main>
+    <footer>
+        <div id="footer1">
+            <img src="./img/footerLogo.png" alt="">
+            <div>2023 No can’t hero. All Rights Reserved. </div>
+        </div>
+        <div id="footer2">
+            <ul>
+                <li><a href="#issue">OVERVIEW</a></li>
+                <li><a href="#planning">PLANNING</a></li>
+                <li><a href="#design">DESIGN</a></li>
+                <li><a href="#process">PROCESS</a></li>
+                <li><a href="#teaser">VIDEO</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./js/load.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/scroll-up.js"></script>
+    <script src="./js/interection.js"></script>
+</body>
+</html>

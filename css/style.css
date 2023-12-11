@@ -1,0 +1,785 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+body {
+    width: 100vw;
+    max-width: 1920px;
+    color: #ffffff;
+    overflow-x: hidden;
+    background: #000;
+    font-family: 'SUIT-Regular';
+}
+
+#loading {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background: #000;
+    transition: transform 0.3s;
+    z-index: 20;
+}
+
+#loading img {
+    position: absolute;
+    transform: scale(0.8);
+    transition: transform 2s ease-in-out;
+    transform-origin: center center;
+}
+
+/* 헤더 */
+header {
+    display: flex;
+    margin: calc(100vw * 70 / 1920) calc(100vw * 100 / 1920) 0 calc(100vw * 100 / 1920);
+    position: fixed;
+    mix-blend-mode: difference;
+    transition: transform 0.5s;
+    z-index: 100;
+    transform: translateY(-300%); /* 헤더를 초기에 숨김 */
+}
+
+.hidden {
+    transform: translateY(-300%);
+}
+header img {
+    width: calc(100vw * 230 / 1920);
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* GNB 우측 정렬 왜.. */
+header ul {
+    margin-left: calc(100vw * 820 / 1920);
+}
+header ul li {
+    display: inline-block;
+    padding: 0 0 0 calc(100vw * 40 / 1920);
+    font-size: calc(100vw * 20 / 1920);
+    list-style-type: none;
+}
+header ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    color: #FF37F7;
+    transition: all ease-in-out 0.3s;
+}
+
+/* 메인 페이지 */
+#main-image {
+    width: calc(100vw * 1920 / 1920);
+    height: calc(100vw * 1123 / 1920);
+}
+
+/* infinite scroll 무한 스크롤 애니메이션 */
+#logos {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.logo-slide {
+    display: inline-block;
+    animation: logoSlide 25s linear infinite;
+}
+.logo-slide img {
+    height: calc(100vw * 77 / 1920);
+}
+@keyframes logoSlide {
+    0%   { transform: translate(0%, 0); }
+    100% { transform: translate(-141.5vw, 0); }
+}
+
+/* 문제 */
+#intro {
+    height: calc(100vw * 700 / 1920);
+    background: #fff;
+    color: #000;
+}
+#intro-title {
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+    font-size: calc(100vw * 50 / 1920);
+    line-height: calc(100vw * 60 / 1920);
+    padding: calc(100vw * 180 / 1920) 0 0 calc(100vw * 200 / 1920);
+}
+#intro-text {
+    display: inline-block;
+    padding: calc(100vw * 190 / 1920) 0 0 calc(100vw * 200 / 1920); 
+}
+#intro-sub {
+    font-size: calc(100vw * 25 / 1920);
+    font-weight: 700;
+}
+#intro-explain {
+    font-size: calc(100vw * 25 / 1920);
+    margin-top: calc(100vw * 20 / 1920);
+    line-height: calc(100vw * 40 / 1920);
+}
+
+/* 사례 */
+#issue {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: calc(100vw * 1200 / 1920);
+}
+.issue-box {
+    flex: 1;
+}
+#issue1 {
+    background: url(../img/issue1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#issue2 {
+    background: url(../img/issue2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#issue3 {
+    background: url(../img/issue3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#issue h6 {
+    font-size: calc(100vw * 25 / 1920);
+    padding: calc(100vw * 60 / 1920) 0 0 calc(100vw * 60 / 1920);
+    color: #CBCBCB;
+
+}
+#issue h3 {
+    position: absolute;
+    font-size: calc(100vw * 50 / 1920);
+    padding: calc(100vw * 825 / 1920) 0 0 calc(100vw * 60 / 1920);
+}
+#issue p {
+    font-size: calc(100vw * 25 / 1920);
+    line-height: calc(100vw * 40 / 1920);
+    padding: calc(100vw * 900 / 1920) 0 0 calc(100vw * 60 / 1920);
+}
+
+/* title & explanation */
+/* planning, user insight */
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(100vw * 50 / 1920);
+}
+.explanation {
+    font-size: calc(100vw * 25 / 1920);
+    padding-top: calc(100vw * 25 / 1920);
+    line-height: calc(100vw * 40 / 1920);
+}
+
+/* PLANNING */
+#planning {
+    padding: calc(100vw * 300 / 1920) 0 0 calc(100vw * 200 / 1920);
+}
+
+/* User Research */
+/* 수정해야함!!! 오래걸려서 일단 보류, 사진으로 대체 */
+#user-research img {
+    width: calc(100vw * 1830 / 1920);
+    margin: calc(100vw * 80 / 1920) 0 0 calc(100vw * 80 / 1920);
+}
+
+/* USER INSIGHT */
+#user-insight {
+    padding: calc(100vw * 440 / 1920) 0 0 calc(100vw * 200 / 1920);
+}
+#user-slide {
+    display: flex;
+    padding-top: calc(100vw * 75 / 1920);
+    animation: Slide;
+    animation-timeline: view(50%);
+    animation-fill-mode: forwards;
+}
+
+@keyframes Slide {
+    0%   { transform: translate(0%, 0); }
+    80%  { opacity: 1; }
+    100% { opacity: 0; transform: translate(-80vw, 0); }
+}
+
+#user-slide img {
+    width: calc(100vw * 1025 / 1920);
+    margin-right: calc(100vw * 65 / 1920)
+}
+#insight {
+    margin-top: calc(100vw * 350 / 1920);
+}
+#insight img {
+    width: calc(100vw * 1200 / 1920);
+}
+
+/* PROJECT MAP */
+#project-map {
+    padding: calc(100vw * 420 / 1920) 0 0 calc(100vw * 200 / 1920);
+}
+#map-line {
+    z-index: 0;
+    position: absolute;
+    margin: calc(100vw * 420 / 1920) 0 0 -3%;
+    background: #fff;
+    width: calc(100vw * 1650 / 1920);
+    height: calc(100vw * 1 / 1920);
+}
+#arrow {
+    position: absolute;
+    /* 화살표 무쟈게 반응형하고싶음 ㅠ */
+    top: -4px;
+    right: 0;
+    display: inline-block;
+    border-top: calc(100vw * 6 / 1920) solid transparent;
+    border-left: calc(100vw * 12 / 1920) solid #fff;
+    border-bottom: calc(100vw * 6 / 1920) solid transparent;
+}
+#map-title {
+    display: flex;
+}
+#map-circle {
+    display: flex;
+    margin-top: -9%;
+}
+
+.circle-title {
+    text-align: center;
+    margin: calc(100vw * 150 / 1920) calc(100vw * 75 / 1920) calc(100vw * 20 / 1920) 0;
+    width: calc(100vw * 460 / 1920);
+    font-size: calc(100vw * 20 / 1920);
+    color: #B0B0B0;
+}
+.circle {
+    z-index: 1;
+    display: flex;
+    flex-direction: column; /* 수직 방향으로 정렬 */
+    justify-content: center; /* 수직 가운데 정렬 */
+    text-align: center;
+    margin-right: calc(100vw * 75 / 1920);
+    background: #000;
+    border-radius: 50%;
+    border: solid calc(100vw * 1 / 1920) #fff;
+    width: calc(100vw * 460 / 1920);
+    height: calc(100vw * 460 / 1920);
+    margin-top: calc(100vw * 200 / 1920);
+    line-height: calc(100vw * 35 / 1920);
+    font-size: calc(100vw * 22 / 1920);
+}
+
+/* HERO */
+#hero {
+    background-image: url(../img/mainImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vw * 1200 / 1920);
+    margin-top: calc(100vw * 550 / 1920);
+}
+#hero h1 {
+    display: inline-block;
+    vertical-align: top;
+    padding: calc(100vw * 940 / 1920) 0 0 calc(100vw * 200 / 1920);
+}
+#hero img {
+    vertical-align: top;
+    width: calc(100vw * 410 / 1920);
+}
+#hero-text {
+    display: inline-block;
+    padding: calc(100vw * 960 / 1920) 0 0 calc(100vw * 95 / 1920); 
+}
+#hero-sub {
+    font-size: calc(100vw * 40 / 1920);
+    font-weight: 700;
+}
+#hero-explain {
+    margin-top: calc(100vw * 30 / 1920);
+    font-size: calc(100vw * 25 / 1920);
+    font-weight: 200;
+    line-height: calc(100vw * 45 / 1920);
+}
+
+/* NAMING */
+#naming {
+    padding: calc(100vw * 360 / 1920) 0 0 calc(100vw * 200 / 1920);
+}
+#naming-box {
+    padding-top: calc(100vw * 100 / 1920);
+    /* display: flex; */
+    /* justify-content: center; */
+}
+#naming-box img {
+    margin-right: calc(100vw * 110 / 1920);
+}
+#naming-box img {
+    width: calc(100vw * 1520 / 1920);
+}
+
+/* LOGO */
+#logo {
+    height: calc(100vw * 1250 / 1920);
+    text-align: center;
+}
+#logo img {
+    width: calc(100vw * 1900 / 1920);
+    padding-top: calc(100vw * 380 / 1920);
+}
+
+/* DESIGN */
+#design {
+    padding: calc(100vw * 120 / 1920) 0 0 calc(100vw * 200 / 1920);
+    background: #5A20FF;
+    height: calc(100vw * 1200 / 1920);
+
+}
+#design img {
+    width: calc(100vw * 1566 / 1920);
+    margin-left: -3%;
+}
+
+#gui {
+    padding: calc(100vw * 380 / 1920) 0 0 calc(100vw * 200 / 1920);
+    font-family: 'Montserrat', sans-serif;
+}
+#gui h4 {
+    font-size: calc(100vw * 24 / 1920);
+}
+#font-style {
+    display: inline-block;
+    vertical-align: top;
+}
+#montserrat {
+    margin-top: calc(100vw * 100 / 1920);
+    font-family: 'Montserrat', sans-serif;
+}
+#montserrat p, #suit p {
+    font-size: calc(100vw * 60 / 1920);
+    margin-top: calc(100vw * 20 / 1920);
+}
+#suit {
+    margin-top: calc(100vw * 67 / 1920);
+    font-family: 'SUIT';
+}
+
+#palette {
+    margin: calc(100vw * 100 / 1920) 0 0 calc(100vw * 100 / 1920);
+    display: inline-block;
+    vertical-align: top;
+}
+#palette p {
+    margin-top: calc(100vw * 5 / 1920);
+}
+#main-colors {
+    font-size: calc(100vw * 14 / 1920);
+    margin-top: calc(100vw * 20 / 1920);
+    display: inline-block;
+}
+#main-color {
+    background: #FF37F7;
+    width: calc(100vw * 500 / 1920);
+    height: calc(100vw * 270 / 1920);
+    padding: calc(100vw * 20 / 1920) 0 0 calc(100vw * 20 / 1920);
+}
+#point-color {
+    background: #5A20FF;
+    height: calc(100vw * 270 / 1920);
+    margin-top: calc(100vw * 10 / 1920);
+    padding: calc(100vw * 20 / 1920) 0 0 calc(100vw * 20 / 1920);
+}
+#sub-color {
+    display: inline-block;
+    font-size: calc(100vw * 14 / 1920);
+    margin-left: calc(100vw * 5 / 1920);
+}
+#sub-color1 {
+    background: #FF2E2E;
+    width: calc(100vw * 250 / 1920);
+    height: calc(100vw * 270 / 1920);
+    padding: calc(100vw * 20 / 1920) 0 0 calc(100vw * 20 / 1920);
+}
+#sub-color2 {
+    background: #10CB44;
+    height: calc(100vw * 270 / 1920);
+    margin-top: calc(100vw * 10 / 1920);
+    padding: calc(100vw * 20 / 1920) 0 0 calc(100vw * 20 / 1920);
+}
+
+/* MODELING */
+#modeling {
+    padding: calc(100vw * 430 / 1920) 0 0 calc(100vw * 200 / 1920);
+}
+#model-slide {
+    display: flex;
+    margin-top: calc(100vw * 80 / 1920);
+    animation: logoSlide 10s linear infinite;
+}
+#model-slide img {
+    width: calc(100vw * 500 / 1920);
+}
+@keyframes Slide2 {
+    0%   { transform: translate(0%, 0); }
+    90%  { opacity: 1; }
+    100% { opacity: 0; transform: translate(-400vw, 0); }
+}
+
+/* CHARACTER */
+#character {
+    padding: calc(100vw * 430 / 1920) 0 0 calc(100vw * 200 / 1920);
+    height: auto;
+}
+#character .wrapper {
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#character .wrapper p{
+    display: inline-block;
+    vertical-align: top;
+}
+#character img {
+    margin-left: calc(100vw * 900 / 1920);
+    width: calc(100vw * 760 / 1920);
+}
+
+#danger {
+    padding-top: calc(100vw * 700 / 1920);
+    height: 150vh;
+    text-align: center;
+}
+#danger img {
+    width: 100vw;
+}
+
+#virus {
+    padding: calc(100vw * 300 / 1920) 0 0 calc(100vw * 200 / 1920);
+}
+#viruses {
+    text-align: center;
+    margin-top: -30%;
+    mix-blend-mode: normal;
+}
+#viruses img {
+    width: calc(100vw * 770 / 1920);
+}
+.center img {
+    width: calc(100vw * 600 / 1920);
+    opacity: 0.3;
+}
+.center {
+    margin-top: calc(100vw * 100 / 1920);
+}
+.slick-center {
+    transform: scale(1.2);
+}
+.slick-center img {
+    opacity: 1;
+}
+
+#map-concept {
+    padding: calc(100vw * 330 / 1920) 0 0 calc(100vw * 200 / 1920);
+}
+
+#map-slide {
+    /* display: flex; */
+    margin-top: calc(100vw * 100 / 1920);
+    /* overflow: hidden; */
+}
+#map-slide img {
+    width: calc(100vw * 1920 / 1920);
+}
+
+/* CHAPTER 챕터 설명 */
+#chapter {
+    margin-top: calc(100vw * 200 / 1920);
+}
+/* slick auto slide */
+.chapter-slide img{
+    width: calc(100vw * 1920 / 1920);
+}
+.chapter-slide h3{
+    font-size: calc(100vw * 52 / 1920);
+}
+.chapter-slide p {
+    margin-top: calc(100vw * 25 / 1920);
+    font-size: calc(100vw * 25 / 1920);
+    line-height: calc(100vw * 50 / 1920);
+}
+.chapter-text {
+    position: absolute;
+    top: 0;
+    padding: calc(100vw * 870 / 1920) 0 0 calc(100vw * 200 / 1920);
+}
+
+/* slick 버튼 */
+.slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: calc(100vw * 50 / 1920);
+    transform: translateX(-50%);
+}
+.slick-dots li {
+    float: left;
+}
+.slick-active #slick-slide-control00{
+    background: #ffffff;
+}
+.slick-active #slick-slide-control01{
+    background: #ffffff;
+}
+.slick-active #slick-slide-control02{
+    background: #ffffff;
+}
+.slick-active #slick-slide-control03{
+    background: #ffffff;
+}
+.slick-active #slick-slide-control04{
+    background: #ffffff;
+}
+.slick-active #slick-slide-control05{
+    background: #ffffff;
+}
+.slick-active #slick-slide-control06{
+    background: #ffffff;
+}
+.slick-active #slick-slide-control07{
+    background: #ffffff;
+    
+}
+#slick-slide-control00, #slick-slide-control01, #slick-slide-control02,
+#slick-slide-control03, #slick-slide-control04, #slick-slide-control05,
+#slick-slide-control06, #slick-slide-control07{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 255, 255, 0.3);
+    margin: 10px;
+    border-radius: 50%;
+    border: none;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-indent: -9999px;
+    z-index: 1;
+    border: none;
+    width: calc(100vw * 50 / 1920);
+    height: calc(100vw * 95 / 1920);
+    
+}
+.slick-prev {
+    background: url(../img/prevBtn.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    left: calc(100vw * 50 / 1920);
+}
+.slick-next {
+    background: url(../img/nextBtn.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    right: calc(100vw * 50 / 1920);
+}
+
+#process {
+    padding: calc(100vw * 180 / 1920) 0 0 calc(100vw * 200 / 1920);
+}
+#process-img {
+    text-align: center;
+    margin-top: calc(100vw * 120 / 1920);
+}
+#process-img h4 {
+    position: absolute;
+    text-align: left;
+    margin: calc(100vw * 20 / 1920) 0 0 calc(100vw * 200 / 1920);
+    font-size: calc(100vw * 20 / 1920);
+    color: #AAAAAA;
+}
+#process-img img {
+    position: relative;
+    width: calc(100vw * 1600 / 1920);
+}
+
+#VR {
+    padding: calc(100vw * 500 / 1920) 0 0 calc(100vw * 200 / 1920);
+}
+
+#vr-interection {
+    text-align: center;
+    margin-top: calc(100vw * 150 / 1920);
+    position: relative;
+}
+/* #vr-interection::after {
+    content: url(../img/vrFrame.png);
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+#vr-interection img {
+    width: calc(100vw * 1200 / 1920);
+    border: solid 1px #fff;
+}
+#vr-frame {
+    text-align: center;
+    margin-top: -47%;
+}
+#vr-frame img {
+    width: calc(100vw * 1450 / 1920);
+}
+
+#vr-li ul {
+    font-size: calc(100vw * 25 / 1920);
+}
+#vr-li li {
+    margin-top: calc(100vw * 100 / 1920);
+    color: #828282;
+    display: inline-block;
+    padding: calc(100vw * 25 / 1920) calc(100vw * 40 / 1920) 0 calc(100vw * 40 / 1920);
+    text-align: center;
+    transition: all ease 0.3s;
+}
+#vr-li li:hover {
+    color: #fff;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+#vr-li li.active {
+    color: #fff;
+}
+
+/* 예시 사진이라 영상 넣으면 지울거임 */
+#teaser {
+    margin-top: calc(100vw * 500 / 1920);
+    width: 100vw;
+}
+
+.video{
+	width: 100vw; 
+    height: 100vh;
+    overflow: hidden; 
+    /*비디오를 해당 크기의 세로정렬 가운데를 위해 */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+video[poster]{ 
+	/* 포스터 이미지의 크기를 비디오 영상에 꽉차도록 */
+    height:100%;
+    width:100%;
+    }
+
+#closing {
+    padding-top: calc(100vw * 550 / 1920);
+    height: 100vh;
+    text-align: center;
+}
+#closing img {
+    width: calc(100vw * 1580 / 1920);
+}
+
+#member {
+    padding: calc(100vw * 500 / 1920) 0 0 calc(100vw * 200 / 1920);    
+    font-size: calc(100vw * 25 / 1920);
+    font-weight: 300;
+}
+#member img {
+    width: calc(100vw * 250 / 1920);
+}
+#member h4 {
+    margin-top: calc(100vw * 20 / 1920);
+    font-weight: 100;
+    color: #9D9D9D;
+}
+#member span {
+    margin-left: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+#member p {
+    color: #9D9D9D;
+    font-size: calc(100vw * 20 / 1920);
+    margin-top: calc(100vw * 35 / 1920);
+}
+
+.mem {
+    margin-top: calc(100vw * 50 / 1920);
+}
+
+.mem div, .mem2 div {
+    display: inline-block;
+    border: solid calc(100vw * 1 / 1920) #545454;
+    width: calc(100vw * 370 / 1920);
+    height: calc(100vw * 445 / 1920);
+    text-align: center;
+    margin-right: calc(100vw * 10 / 1920);
+}
+
+.mem2 {
+    margin-top: calc(100vw * 35 / 1920);
+}
+
+footer {
+    background: rgb(255, 255, 255, 0.05);
+    padding: calc(100vw * 80 / 1920) 0 0 calc(100vw * 200 / 1920);    
+    margin-top: calc(100vw * 280 / 1920);
+    height: calc(100vw * 330 / 1920);
+    border-top: solid #545454 calc(100vw * 1 / 1920);
+}
+footer img {
+    width: calc(100vw * 370 / 1920);
+}
+#footer1, #footer2 {
+    display: inline-block;
+}
+#footer1 div{
+    color: #615F5F;
+    font-size: calc(100vw * 20 / 1920);
+    margin-top: calc(100vw * 65 / 1920);
+}
+#footer2 {
+    vertical-align: top;
+    padding: calc(100vw * 65 / 1920) 0 0 calc(100vw * 480 / 1920);
+}
+
+footer ul {
+    float: right;
+    font-size: calc(100vw * 20 / 1920);;
+    padding-right: calc(100vw * 200 / 1920);
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 calc(100vw * 20 / 1920);
+}
+footer ul li a {
+    text-decoration: none;
+    color: #615F5F;
+    transition: all ease 0.3s;
+}
+footer ul li a:hover {
+    color: #fff;
+    transition: all ease 0.3s;
+}
+
+
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity 1s, transform 1s;
+}
+
+.suit {
+    font-family: "SUIT";
+}
